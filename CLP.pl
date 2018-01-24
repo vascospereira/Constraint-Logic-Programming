@@ -3,6 +3,11 @@
 % 2 - Put some restrictions to the problem
 % 3 - Search solutions
 
+% PRIME NUMBER
+prime(Num):-
+	findall(I, (Num mod I #= 0, I in 1..Num, indomain(I)),Ns),
+	length(Ns,2). 
+
 puzzle(1,[D,O,N,A,L,D],[G,E,R,A,L,D],[R,O,B,E,R,T]).
 puzzle(2,[0,C,R,O,S,S],[0,0,R,O,A,D],[D,A,N,G,E,R]).
 puzzle(3,[0,S,E,N,D],[0,M,O,R,E],[M,O,N,E,Y]).
