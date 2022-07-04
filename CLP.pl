@@ -2,6 +2,7 @@
 % 1 - Declare variables and domains
 % 2 - Put some restrictions to the problem
 % 3 - Search solutions
+% To use constraints -> :- use_module(library(clpfd)).
 
 % PRIME NUMBER
 prime(Num):-
